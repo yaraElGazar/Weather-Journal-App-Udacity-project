@@ -1,0 +1,76 @@
+body {
+  background: #fffff8;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-template-columns: 180px 700px 180px;
+  grid-template-rows: 85px 100px 250px 80px 300px;
+  background-color: #abd6f3;
+  float: center;
+  font-family: "Oswald", sans-serif;
+  width: auto;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+.holder-headline {
+  float: left;
+  grid-column: 1;
+}
+
+.holder-zip {
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+
+.holder-feel {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+input,
+textarea {
+  width: 70%;
+  padding: 0.8em;
+  margin-bottom: 3em;
+  border-radius: 0.4em;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+#app > div {
+  text-align: center;
+  font-size: 25px;
+  width: none;
+}
+
+#generate {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 20px;
+  display: block;
+  border-radius: 1em;
+  border: none;
+  padding: 0.6em 2em;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  height: 50px;
+}
+
+.holder-entry {
+  grid-column: 2;
+  grid-row: 5;
+  background-color: #fffff8;
+  color: black;
+  border-radius: 0.5em;
+  height: 200px;
+}
